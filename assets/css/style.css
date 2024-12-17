@@ -1,6 +1,6 @@
 /* ----- POPPINS FONT Link ----- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-/* ----- VARIABLES ----- */
+
 :root{
     --body-color: rgb(250, 250, 250);
     --color-white: rgb(255, 255, 255);
@@ -12,18 +12,18 @@
     --third-color: rgb(192, 166, 49);
     --first-shadow-color: rgba(0, 0, 0, 0.1);
 }
-/* ----- BASE ----- */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-/* ----- SMOOTH SCROLL ----- */
+
 html{
     scroll-behavior: smooth;
 }
-/* ----- CHANGE THE SCROLL BAR DESIGN ----- */
+
 ::-webkit-scrollbar{
     width: 10px;
     border-radius: 25px;
@@ -38,8 +38,7 @@ html{
 ::-webkit-scrollbar-thumb:hover{
     background: #bbb;
 }
-/* ---##-- REUSABLE CSS --##--- */
-/* ----- GLOBAL BUTTON DESIGN ----- */
+
 .btn{
     font-weight: 500;
     padding: 12px 20px;
@@ -56,11 +55,11 @@ html{
     background: var(--second-color);
     color: var(--color-white);
 }
-/* ----- GLOBAL ICONS DESIGN ----- */
+
 i{
     font-size: 16px;
 }
-/* ------- BASE -------- */
+
 body{
     background: var(--body-color);
 }
@@ -68,7 +67,7 @@ body{
     width: 100%;
     position: relative;
 }
-/* ----- NAVIGATION BAR ----- */
+
 nav{
     position: fixed;
     display: flex;
@@ -140,18 +139,18 @@ nav{
     background: var(--first-color);
     border-radius: 50%;
 }
-/* ----- WRAPPER DESIGN ----- */
+
 .wrapper{
     padding-inline: 10vw;
 }
-/* ----- FEATURED BOX ----- */
+
 .featured-box{
     position: relative;
     display: flex;
     height: 100vh;
     min-height: 700px;
 }
-/* ----- FEATURED TEXT BOX ----- */
+
 .featured-text{
     position: relative;
     display: flex;
@@ -213,7 +212,7 @@ nav{
 .icon:hover{
     color: var(--first-color);
 }
-/* ----- FEATURED IMAGE BOX ----- */
+
 .featured-image{
     display: flex;
     justify-content: right;
@@ -260,7 +259,7 @@ nav{
 .scroll-btn i{
     font-size: 20px;
 }
-/* ----- MAIN BOX ----- */
+
 .section{
     padding-block: 5em;
 }
@@ -274,7 +273,7 @@ nav{
     display: flex;
     width: 50%;
 }
-/* -- ## --- RESUABLE CSS -- ## -- */
+
 .top-header{
     text-align: center;
     margin-bottom: 5em;
@@ -293,7 +292,7 @@ h3{
     color: var(--text-color-second);
     margin-bottom: 15px;
 }
-/* ----- ABOUT INFO ----- */
+
 .about-info{
     position: relative;
     display: flex;
@@ -322,7 +321,7 @@ h3{
 .about-btn button:hover{
     background: var(--first-color-hover);
 }
-/* ----- ABOUT / SKILLS BOX ----- */
+
 .skills-box{
     margin: 10px;
 }
@@ -341,7 +340,7 @@ h3{
     padding: 2px 10px;
     border-radius: 5px;
 }
-/* ----- PROJECTS BOX ----- */
+
 .project-container{
     display: flex;
     width: 100%;
@@ -381,17 +380,7 @@ h3{
     transition: .4s;
     z-index: 1;
 }
-.project-box:hover.project-box::after,
-.contact-info:hover.contact-info::after{
-    bottom: 0;
-}
-.project-box:hover.project-box i,
-.project-box:hover.project-box>h3,
-.project-box:hover.project-box>label{
-    color: var(--color-white);
-    z-index: 2;
-}
-/* ----- CONTACT BOX ----- */
+
 .contact-info{
     position: relative;
     display: flex;
@@ -399,8 +388,9 @@ h3{
     justify-content: center;
     align-items: center;
     padding: 20px 30px;
-    width: 100%;
-    height: 315px;
+    margin: 0 auto;
+    width: 60%;
+    height: 280px;
     background: var(--second-color);
     border-radius: 10px;
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
@@ -429,59 +419,14 @@ h3{
     color: #777;
     z-index: 2;
 }
-/* ----- CONTACT FORM ----- */
-.form-control{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-}
-.form-inputs{
-    display: flex;
-    gap: 10px;
-    width: 100%;
-}
-.input-field{
-    width: 50%;
-    height: 55px;
-    background: transparent;
-    border: 2px solid #AAA;
-    border-radius: 10px;
-    padding-inline: 20px;
-    outline: none;
-}
-textarea{
-    width: 100%;
-    height: 250px;
-    background: transparent;
-    border: 2px solid #AAA;
-    border-radius: 10px;
-    padding: 15px 20px;
-    outline: none;
-    resize: none;
-}
-.form-button>.btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--second-color);
-    color: var(--color-white);
-}
-.form-button>.btn:hover{
-    background: #00B5E7;
-}
-.form-button i{
-    font-size: 18px;
-    rotate: -45deg;
-}
-/* ----- FOOTER BOX ----- */
+
 footer{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     row-gap: 30px;
-    background: #f8f8f822;
+    background: #f8f8f888;
     padding-block: 40px 60px;
 }
 .top-footer p{
@@ -504,10 +449,7 @@ footer{
     display: flex;
     gap: 30px;   
 }
-.bottom-footer{
-    font-size: 14px;
-    margin-top: 10px;
-}
+
 /* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
 @media only screen and (max-width: 1024px){
     .featured-text{
@@ -620,10 +562,63 @@ a{
 }
 .btn-2
 {
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .btn-1
 {
-    margin-top: 12px;
+    margin-top: 10px;
+}
+
+.repo-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.repo-button:hover {
+    background-color: #0056b3;
+}
+
+#experience {
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+}
+
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.experience-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.experience-box h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.experience-box p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.experience-box i {
+    color: #007bff;
+    margin-right: 5px;
 }
